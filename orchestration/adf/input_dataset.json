@@ -1,0 +1,19 @@
+{
+  "name": "InputDataset",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "AzureStorageLinkedService",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "Json",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "trending.json",
+        "container": "raw-data"
+      }
+    },
+    "schema": {}
+  }
+}

@@ -1,0 +1,6 @@
+dashboard:
+  title: YouTube Trending Overview
+  charts:
+    - name: Trending Videos Table
+      type: table
+      dataset: trending_videos 

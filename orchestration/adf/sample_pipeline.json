@@ -1,0 +1,22 @@
+{
+  "name": "sample_pipeline",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopyTrendingJson",
+        "type": "Copy",
+        "inputs": [
+          { "referenceName": "InputDataset", "type": "DatasetReference" }
+        ],
+        "outputs": [
+          { "referenceName": "OutputDataset", "type": "DatasetReference" }
+        ],
+        "typeProperties": {
+          "source": { "type": "JsonSource" },
+          "sink": { "type": "JsonSink" }
+        }
+      }
+    ],
+    "description": "Minimal pipeline to copy trending.json"
+  }
+}

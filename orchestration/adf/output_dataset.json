@@ -1,0 +1,19 @@
+{
+  "name": "OutputDataset",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "AzureStorageLinkedService",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "Json",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "processed_trending.json",
+        "container": "curated-data"
+      }
+    },
+    "schema": {}
+  }
+}
