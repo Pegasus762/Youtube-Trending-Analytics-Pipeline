@@ -5,7 +5,7 @@ spark = SparkSession.builder.appName('TrendingETL').getOrCreate()
 
 spark.conf.set(
   "fs.azure.account.key.yttrendingdata.blob.core.windows.net",
-  "BdnuWz/PmaknAhOjrpPgAdEuJE8HzTJczY370JyRhIZo/CRV2Zgst79fwWr1aPwSdFRYNTs/Vvo4+AStOCDqcQ=="
+  ""
 )
 
 # Read the JSON data
